@@ -2,10 +2,11 @@ import React from "react";
 import AboutTeams from './AboutTeams'
 import TeamMembers from "./TeamMembers";
 import TeamMemberDetails from "./TeamMemberDetails"
+import '../../../CSS/layout/teams.scss'
 
 const Teams = () => {
   return (
-    <section id="teams">
+    <section id="Teams">
         <AboutTeams/>
         <TeamMembers />
         <TeamMemberDetails />

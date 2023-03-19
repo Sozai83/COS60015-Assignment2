@@ -1,20 +1,21 @@
 import React from "react";
+import '../../CSS/layout/forms.scss'
 
 const Subscription = () => {
     return (
-		<div class="wrapper">
-                <section id="subscription">
+		<div class="Wrapper">
+                <section id="Subscription">
                     <h2>Subscribe to news letters</h2>
-                    <form action="" method="post" id="subscribe-form">
-                        <div id ="alert-sub" class="alert hidden">
-                            <ul id="alert-list-sub">
+                    <form action="" method="post" id="SubscribeForm">
+                        <div id ="AlertSub" className="Alert Hidden">
+                            <ul id="AlertListSub">
                                 {/* <li>Please fill Email address</li>
                                 <li>Please enter valid email adress.</li> */}
                             </ul>
                         </div>
                         <label for="subemail">Email (mandatory): </label>
                         <input type="email" id="submail" name="subemail" aria-label="submail" placeholder="abc@braveblossoms.com.au" required/>
-                        <label for="area" class="dropdown">Areas: </label>
+                        <label for="area" className="Dropdown">Areas: </label>
                         <select name="area">
                             <option type="checkbox" value="any" aria-label="any" selected>Any</option>
                             <option type="checkbox" value="hokkaido" aria-label="hokkaido">Hokkaido</option>
@@ -26,7 +27,7 @@ const Subscription = () => {
                             <option type="checkbox" value="kyushu" aria-label="kyushu">Kyushu</option>
                             <option type="checkbox" value="okinawa" aria-label="Okinawa">Okinawa</option>
                         </select>
-                        <input type="submit" id="subscribe-submit" value="Follow Brave Blossoms!" aria-label="submit"/>
+                        <input type="submit" id="SubscribeSubmit" value="Follow Brave Blossoms!" aria-label="submit"/>
                     </form>
                 </section>
             </div>

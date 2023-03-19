@@ -2,9 +2,9 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <form action="" method="post" id="contact-form">
-      <div id="alert" class="alert hidden">
-        <ul id="alert-list">
+    <form action="" method="post" id="ContactForm">
+      <div id="Alert" className="Alert Hidden">
+        <ul id="AlertList">
           {/* <li>Please fill First Name, Last Name, Email address, category, Description</li>
                             <li>Please enter valid email adress.</li>
                             <li>Please enter valid phone number.</li> */}

@@ -7,8 +7,8 @@ import Rules from "./Rules/Rules";
 
 const Main = () => {
     return (
-		<main id="home">
-			<div className="MainSection">
+		<main id="Home">
+			<div className="Wrapper">
 				<MainNav />
 				<Welcome />
 				<Teams />

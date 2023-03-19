@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-    <div id="footer-contact">
+    <div id="FooterContact">
         <p>Contact:</p>
         <address>Address: xxx xxxx xxxxx Tokyo, Japan</address>
         <email>Email: <a href="mailto:fake.email@braveblossom.com">fake.email@braveblossom.com</a></email>

@@ -4,11 +4,11 @@ const AboutTeams = () => {
   return (
     <div>
         <h2>Teams</h2>
-        <figure className="teams-top">
+        <figure className="TeamsTop">
         <img src={'./img/rugby_teams.jpg'} alt="teams introduction"/>
-        <i className="credit">Photo by <a href="https://unsplash.com/@designer4u?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olga Guryanova</a> on <a href="https://unsplash.com/photos/ft7vJxwl2RY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></i>
+        <i className="Credit">Photo by <a href="https://unsplash.com/@designer4u?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olga Guryanova</a> on <a href="https://unsplash.com/photos/ft7vJxwl2RY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></i>
         </figure>
-        <article className="about">
+        <article className="About">
             <h3>About the team</h3>
             <p>
                 The Brave Blossoms was named after the emblematic flower of Japan, the cherry blossom.<br/>

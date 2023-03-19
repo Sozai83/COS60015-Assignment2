@@ -4,7 +4,7 @@ const RulesInfo = () => {
 
   return (
     <div>
-        <section id="begineer-rules" className="rule-card">
+        <section id="BegineerRules" className="RuleCard">
                         <h2>Rules for beginners</h2>
                         <article>
                             <div>
@@ -19,7 +19,7 @@ const RulesInfo = () => {
                             </div>
                             <figure>
                                 <iframe width="500" height="315" src="https://www.youtube.com/embed/-LjUeplfN6Q" title="YouTube video player" allowfullscreen></iframe>
-                                <i className="credit">Video made by <a href="https://www.youtube.com/@rugbykishiboy7930" target="_blank">Rugby Kishiboy</a></i>
+                                <i className="Credit">Video made by <a href="https://www.youtube.com/@rugbykishiboy7930" target="_blank">Rugby Kishiboy</a></i>
                             </figure>
                         </article>
                         <article>
@@ -36,11 +36,11 @@ const RulesInfo = () => {
                             </div>
                             <figure>
                                 <iframe width="500" height="315" src="https://www.youtube.com/embed/Vn5fwhxhj4s" title="YouTube video player" allowfullscreen></iframe>
-                                <i className="credit">Video made by <a href="https://www.youtube.com/@SapporoPRD" target="_blank">SapporoPRD</a></i>
+                                <i className="Credit">Video made by <a href="https://www.youtube.com/@SapporoPRD" target="_blank">SapporoPRD</a></i>
                             </figure>
                         </article>
                     </section>
-                    <section id="advance-rules" className="rule-card hidden">
+                    <section id="AdvanceRules" className="RuleCard Hidden">
                         <h2>Rules for advanced fans</h2>
                         <article>
                             <div>
@@ -59,11 +59,11 @@ const RulesInfo = () => {
                             </div>
                             <figure>
                                 <iframe width="500" height="315" src="https://www.youtube.com/embed/39qZqnlqJ34" title="YouTube video player" allowfullscreen></iframe>
-                                <i className="credit">Video made by <a href="https://www.youtube.com/@jrfuofficial" target="_blank">JAPAN RUGBY TV</a></i>
+                                <i className="Credit">Video made by <a href="https://www.youtube.com/@jrfuofficial" target="_blank">JAPAN RUGBY TV</a></i>
                             </figure>
                         </article>
                     </section>
-                    <section id="recent-changes" className="rule-card hidden">
+                    <section id="RecentChanges" className="RuleCard Hidden">
                         <h2>Recent rule changes</h2>
                         <article>
                             <div>
@@ -80,7 +80,7 @@ const RulesInfo = () => {
                             </div>
                             <figure>
                                 <iframe width="500" height="315" src="https://www.youtube.com/embed/ZXxuoXu7qTw" title="YouTube video player" allowfullscreen></iframe>
-                                <i className="credit">Video made by <a href="https://www.youtube.com/@taizochannel6718" target="_blank">ラグビープロレフリー/Taizo Channel</a></i>
+                                <i className="Credit">Video made by <a href="https://www.youtube.com/@taizochannel6718" target="_blank">ラグビープロレフリー/Taizo Channel</a></i>
                             </figure>
                         </article>
                     </section>

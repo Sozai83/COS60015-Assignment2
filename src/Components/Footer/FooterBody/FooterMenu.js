@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-      <nav id="footer-nav">
+      <nav id="FooterNav">
         <div>
           <ul>
             <li data-nav="home-top">Home</li>

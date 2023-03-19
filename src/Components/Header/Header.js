@@ -1,16 +1,19 @@
 import React from 'react'
 import Navigation from './Navigation/Navigation'
+import '../../CSS/layout/header.scss'
 
 const Header = () => {
   return (
 		<header>
-            <div className="logo">
-                <div className="wrapper">
+            <div className="Logo">
+                <div className="Wrapper">
                     <img src="./img/teams/jpn.png" alt="Brave Blossoms Logo" />
                     <h4>Brave Blossoms Portal</h4>
                 </div>
             </div>
-			<Navigation />
+            <div className="Wrapper">
+                <Navigation />
+            </div>
         </header>
   );
 }

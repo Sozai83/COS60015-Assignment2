@@ -1,17 +1,8 @@
-import React from "react";
+import NavCreator from "../NavCreator"
 
 const GameNav = () => {
-
-  const navItems = ["2023", "2022", "2021"];
-  const navList = navItems.map((nav,index) => <li key={index} className="match-list"  data-nav={`matches_${nav}`}>{nav.toUpperCase().replace('_', ' ')}</li>);
-
-  return (
-    <nav id="match-nav">
-        <ul>
-            {navList}
-        </ul>
-    </nav>
-    );
-};
+    const ruleNavItems = ["2023", "2022", "2021"];
+    return NavCreator({NavItems: ruleNavItems, NavId :"MatchNav"});
+}
 
 export default GameNav;

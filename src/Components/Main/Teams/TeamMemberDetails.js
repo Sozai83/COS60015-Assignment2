@@ -1,12 +1,13 @@
 import React from "react";
+import '../../../CSS/layout/team-details.scss'
 
 const TeamMemberDetails = () => {
   return (
-    <div class="overlay hidden">
-                        <section id="team-details">
-                            <section class="details">
-                                <a class="close" href="#">&times;</a>
-                                <section class="bio">
+    <div className="Overlay Hidden">
+                        <section id="TeamDetails">
+                            <section className="Details">
+                                <a className="Close" href="#">&times;</a>
+                                <section className="Bio">
                                     <figure>
                                         <img src="./img/placeholder2.png" alt="fw1"/>
                                     </figure>
@@ -46,29 +47,29 @@ const TeamMemberDetails = () => {
                                         Aut ipsa quibusdam ad perspiciatis galisum qui corporis minus aut rerum ipsam est libero nihil.<br/>
                                         Ut suscipit laudantium aut ipsam nostrum sed eveniet nulla non quasi ipsam ut doloribus dolores qui ullam voluptas. Sed architecto praesentium ut iste eius est minima sequi aut quasi quibusdam.
                                     </p>
-                                    <div class="sms">
+                                    <div className="SMS">
                                         <a href="twitter">Twitter</a>
                                         <a href="insta">Instagram</a>
                                     </div>
                                 </article>
                             </section>
-                            <h3 class="news">News</h3>
-                            <figure id="news">
+                            <h3 className="News">News</h3>
+                            <figure id="News">
                                 <figure>
                                     <img src="./img/placeholder2.png" alt="fw1_news1"/>
-                                    <figcaption class="fw1_news1"><a href="#">FW1 News1 Test Test</a></figcaption>
+                                    <figcaption><a href="#">FW1 News1 Test Test</a></figcaption>
                                 </figure>
                                 <figure>
                                     <img src="./img/placeholder2.png" alt="fw1_news1"/>
-                                    <figcaption class="fw1_news1"><a href="#">FW1 News1 Test Test</a></figcaption>
+                                    <figcaption><a href="#">FW1 News1 Test Test</a></figcaption>
                                 </figure>
                                 <figure>
                                     <img src="./img/placeholder2.png" alt="fw1_news1"/>
-                                    <figcaption class="fw1_news1"><a href="#">FW1 News1 Test Test</a></figcaption>
+                                    <figcaption><a href="#">FW1 News1 Test Test</a></figcaption>
                                 </figure>
                                 <figure>
                                     <img src="./img/placeholder2.png" alt="fw1_news1"/>
-                                    <figcaption class="fw1_news1"><a href="#">FW1 News1 Test Test</a></figcaption>
+                                    <figcaption><a href="#">FW1 News1 Test Test</a></figcaption>
                                 </figure>
                             </figure>
                         </section>

@@ -1,17 +1,8 @@
-import React from "react";
+import NavCreator from "../../NavCreator"
 
 const RulesNav = () => {
-
-  const navItems = ["begineer-rules", "advance-rules", "recent-changes"];
-  const navList = navItems.map((nav,index) => <li key={index} className="rule-list"  data-nav={nav}>{nav.toUpperCase().split('-')[0]}</li>);
-
-  return (
-    <nav id="second-nav">
-        <ul>
-            {navList}
-        </ul>
-    </nav>
-    );
-};
+    const ruleNavItems = ["Begineer Rules", "Advance Rules", "Recent Changes"];
+    return NavCreator({NavItems: ruleNavItems});
+}
 
 export default RulesNav;

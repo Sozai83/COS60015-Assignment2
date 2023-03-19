@@ -1,11 +1,12 @@
 import React from 'react';
 import WelcomePhotoCredential from './WelcomePhotoCredential'
+import '../../../CSS/layout/welcome.scss'
 
 const Welcome = () => {
  
   return (
     <div>
-      <section id="welcome">
+      <section id="Welcome">
         <h1>Welcome to the Brave Blossoms Portal!</h1>
         <article>
           <h4>We are the "Brave Blossoms", the Japan men's national rugby team.</h4>

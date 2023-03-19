@@ -4,8 +4,8 @@ import FooterContact from "./FooterContact";
 
 const Footer = () => {
     return (
-		<section id="footer">
-      <div class="wrapper">
+		<section id="Footer">
+      <div class="Wrapper">
         <FooterMenu />
         <FooterContact />
       </div>
