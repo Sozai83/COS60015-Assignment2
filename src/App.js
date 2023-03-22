@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Header from "./Components/Header/Header";
 import Navigation from './Components/Navigation';
 import Main from "./Components/Main/Main";
@@ -11,13 +11,12 @@ function App() {
 	const [selectedComponent, setSelectedComponent] = useState('home');
 	const selectNav = (event) => {
 		setSelectedComponent(event ? event.target.dataset.nav : 'home');
-		console.log(selectedComponent);
 	};
   return (
     <div className="App">
 		<Header/>
 		<div className="Wrapper">
-            <Navigation selectNav={selectNav} navItems={navItems} navId="TopNav"/>
+            <Navigation selectNav={selectNav} navItems={navItems} navId="TopNav" default={selectedComponent}/>
         </div>
 		<Main hidden={selectedComponent !== 'home'}/>
 		<Matches hidden={selectedComponent !== 'matches'}/>

@@ -12,7 +12,7 @@ const Main = () => {
     };
     return (
 		<section id="LearnRugby">
-				<Navigation navItems={ruleNavItems} selectNav={selectNav} />
+				<Navigation navItems={ruleNavItems} selectNav={selectNav}  default={selectedComponent} />
         <RuleInfo selected={selectedComponent} />
 		</section>
     );

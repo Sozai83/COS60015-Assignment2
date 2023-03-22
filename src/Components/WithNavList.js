@@ -4,9 +4,14 @@ import '../CSS/layout/navigation.scss';
 const withNavList = Component => {
     const NewComponent = ({navItems, navId, selectNav, ...props})=>{
         const [navList, setNavList] = useState(null);
+        const selectEl = (event)=>{
+            selectNav(event);
+            event.target.parentNode.childNodes.forEach(chil => chil.classList.remove('Active'));
+		    event.target.classList.add('Active');
+        }
         //Convert navItems to navList JSX
         useEffect(()=> {
-            const items = navItems ? navItems.map((nav,index) => <li key={index} data-nav={nav.replace(" ", "-").toLowerCase()} onClick={selectNav}>{nav.toUpperCase()}</li>) : <li>No list</li>;
+            const items = navItems ? navItems.map((nav,index) => <li key={index} data-nav={nav.replace(" ", "-").toLowerCase()} className={props.default === nav.toLowerCase() && 'Active'} onClick={selectEl}>{nav.toUpperCase()}</li>) : <li>No list</li>;
             setNavList(items);
         }, []);
 

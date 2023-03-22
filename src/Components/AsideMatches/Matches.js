@@ -13,7 +13,7 @@ const AsideMatches = (props) => {
     return (
 		<aside id="Matches" className={props.hidden && 'Hidden'}>
             <div class="Wrapper">
-			<Navigation navItems={ruleNavItems} navId="MatchNav" selectNav={selectNav}/>
+			<Navigation navItems={ruleNavItems} navId="MatchNav" selectNav={selectNav}  default={selectedComponent}/>
 			<MatchInfo selected={selectedComponent}/>
 			</div>
 		</aside>

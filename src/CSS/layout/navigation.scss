@@ -28,7 +28,7 @@
             }
 
             &:hover:after,
-            .Active:Active{
+            &.Active:after{
                 width: 100%;
                 left: 0px;
             }
@@ -57,7 +57,7 @@
             background-color: $brave-pink-transparent;
 
             &:hover,
-            .Active{
+            &.Active{
                 background-color: $brave-pink;
             }
         }
