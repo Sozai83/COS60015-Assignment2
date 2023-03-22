@@ -1,17 +1,27 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Header from "./Components/Header/Header";
+import Navigation from './Components/Navigation';
 import Main from "./Components/Main/Main";
-import Game from "./Components/AsideGame/Game";
+import Matches from "./Components/AsideMatches/Matches";
 import Contact from "./Components/AsideContact/Contact";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
+	const navItems = ["Matches", "Home", "Contact"];
+	const [selectedComponent, setSelectedComponent] = useState('home');
+	const selectNav = (event) => {
+		setSelectedComponent(event ? event.target.dataset.nav : 'home');
+		console.log(selectedComponent);
+	};
   return (
     <div className="App">
 		<Header/>
-		<Main />
-		<Game />
-		<Contact/>
+		<div className="Wrapper">
+            <Navigation selectNav={selectNav} navItems={navItems} navId="TopNav"/>
+        </div>
+		<Main hidden={selectedComponent !== 'home'}/>
+		<Matches hidden={selectedComponent !== 'matches'}/>
+		<Contact hidden={selectedComponent !== 'contact'}/>
 		<Footer />
     </div>
   );

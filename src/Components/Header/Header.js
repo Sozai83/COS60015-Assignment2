@@ -1,5 +1,5 @@
 import React from 'react'
-import Navigation from './Navigation/Navigation'
+import Navigation from '../Navigation'
 import '../../CSS/layout/header.scss'
 
 const Header = () => {
@@ -10,9 +10,6 @@ const Header = () => {
                     <img src="./img/teams/jpn.png" alt="Brave Blossoms Logo" />
                     <h4>Brave Blossoms Portal</h4>
                 </div>
-            </div>
-            <div className="Wrapper">
-                <Navigation />
             </div>
         </header>
   );

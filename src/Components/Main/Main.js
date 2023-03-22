@@ -1,15 +1,16 @@
 import React from "react";
-import MainNav from "./MainNav";
+import Navigation from "../Navigation";
 import Welcome from "./Welcome/Welcome";
 import Teams from "./Teams/Teams";
 import Rules from "./Rules/Rules";
 
 
-const Main = () => {
+const Main = (props) => {
+	const mainNav = ['Welcome', 'Teams', 'Learn Rugby'];
     return (
-		<main id="Home">
+		<main id="Home" className={props.hidden && 'Hidden'}>
 			<div className="Wrapper">
-				<MainNav />
+				<Navigation navItems={mainNav} navId="SecondNav"/>
 				<Welcome />
 				<Teams />
 				<Rules />

@@ -1,10 +1,10 @@
 import React from 'react'
 
-const GameInfo = () => {
-
+const GameInfo = (props) => {
+    const selected = props.selected;
   return (
 	  <div>
-	  	<section id="Matches2023" className="MatchWrap">
+	  	<section id="Matches2023" className={selected !== '2023' && 'Hidden'}>
                     <section className="MatchCard">
                         <table>
                             <tr className="MatchTitle">
@@ -142,7 +142,7 @@ const GameInfo = () => {
                         </div>
                     </section>
                 </section>
-                <section id="matches_2022" className="match-wrap hidden">
+                <section id="matches_2022" className={selected !== '2022' && 'Hidden'}>
                     <section className="MatchCard">
                         <table>
                             <tr className="MatchTitle">
@@ -181,7 +181,7 @@ const GameInfo = () => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/mAaJeXlOq-A" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/mAaJeXlOq-A" title="YouTube video player" frameborder="0" allowFullscreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/@lloydsportschannel3683" target="_blank"> Lloyd Sports Channel </a></i></figcaption>
                         </div>
@@ -224,7 +224,7 @@ const GameInfo = () => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/nn38b5raeXQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/nn38b5raeXQ" title="YouTube video player" frameborder="0" allowFullscreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/@AutumnNationsSeries" target="_blank">Autumn Nations Series</a></i></figcaption>
                         </div>
@@ -276,7 +276,7 @@ const GameInfo = () => {
                         </div>
                     </section>
                 </section>
-                <section id="matches_2021" className="match-wrap hidden">
+                <section id="matches_2021" className={selected !== '2021' && 'Hidden'}>
                     <section className="MatchCard">
                         <table>
                             <tr className="MatchTitle">
@@ -315,7 +315,7 @@ const GameInfo = () => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/g-poWjFCXiU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/g-poWjFCXiU" title="YouTube video player" frameborder="0" allowFullscreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/@rugbyworldcupjp" target="_blank">ワールドラグビー 日本チャンネル</a></i></figcaption>
                         </div>
@@ -358,7 +358,7 @@ const GameInfo = () => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/D_EdDO3ltto" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/D_EdDO3ltto" title="YouTube video player" frameborder="0" allowFullscreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/channel/UCBFtpGAWdU0s-kEkykmjQeg" target="_blank">Rugby Z Highlights</a></i></figcaption>
                         </div>
@@ -401,7 +401,7 @@ const GameInfo = () => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/id7Pbet5HEI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/id7Pbet5HEI" title="YouTube video player" frameborder="0" allowFullscreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/channel/UCsMWJnL1aY0g_FBijoRe77g" target="_blank"> Rugby.com.au</a></i></figcaption>
                         </div>

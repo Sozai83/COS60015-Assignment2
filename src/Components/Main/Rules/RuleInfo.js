@@ -1,10 +1,15 @@
 import React from "react";
 
-const RulesInfo = () => {
+const RulesInfo = (props) => {
+    const ruleCardClass = "RuleCard "
+    const selected = props.selected;
+    const beginnerClass = ruleCardClass + (selected !== 'beginner-rules' ? 'Hidden' : '');
+    const advanceClass = ruleCardClass + (selected !== 'advance-rules' ? 'Hidden' : '');
+    const recentClass = ruleCardClass + (selected !== 'recent-changes' ? 'Hidden' : '');
 
   return (
-    <div>
-        <section id="BegineerRules" className="RuleCard">
+    <div className="Wrapper">
+        <section id="BegineerRules" className={beginnerClass}>
                         <h2>Rules for beginners</h2>
                         <article>
                             <div>
@@ -40,7 +45,7 @@ const RulesInfo = () => {
                             </figure>
                         </article>
                     </section>
-                    <section id="AdvanceRules" className="RuleCard Hidden">
+                    <section id="AdvanceRules"  className={advanceClass}>
                         <h2>Rules for advanced fans</h2>
                         <article>
                             <div>
@@ -63,7 +68,7 @@ const RulesInfo = () => {
                             </figure>
                         </article>
                     </section>
-                    <section id="RecentChanges" className="RuleCard Hidden">
+                    <section id="RecentChanges"  className={recentClass}>
                         <h2>Recent rule changes</h2>
                         <article>
                             <div>

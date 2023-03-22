@@ -2,9 +2,9 @@ import React from "react";
 import ContactForm from "./ContactForm";
 import '../../CSS/layout/forms.scss'
 
-const Contact = () => {
+const Contact = (props) => {
     return (
-		<aside id="Contact">
+		<aside id="Contact"  className={props.hidden && 'Hidden'}>
             <div className="Wrapper">
                 <header>
                     <h1>Contact us</h1>
