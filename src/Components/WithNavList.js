@@ -11,7 +11,16 @@ const withNavList = Component => {
         }
         //Convert navItems to navList JSX
         useEffect(()=> {
-            const items = navItems ? navItems.map((nav,index) => <li key={index} data-nav={nav.replace(" ", "-").toLowerCase()} className={props.default === nav.toLowerCase() && 'Active'} onClick={selectEl}>{nav.toUpperCase()}</li>) : <li>No list</li>;
+            const items = navItems ? navItems.map(
+                (nav,index) => 
+                <li key={index} 
+                    data-nav={nav.replace(" ", "")}
+                    className={props.default === nav && 'Active'}
+                    onClick={selectEl}
+                    >
+                        {nav.toUpperCase()}
+                    </li>
+                ) : <li>No list</li>;
             setNavList(items);
         }, []);
 

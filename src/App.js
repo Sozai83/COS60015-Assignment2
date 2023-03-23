@@ -8,19 +8,24 @@ import Footer from "./Components/Footer/Footer";
 
 function App() {
 	const navItems = ["Matches", "Home", "Contact"];
-	const [selectedComponent, setSelectedComponent] = useState('home');
+	const [selectedComponent, setSelectedComponent] = useState('Home');
 	const selectNav = (event) => {
-		setSelectedComponent(event ? event.target.dataset.nav : 'home');
+		setSelectedComponent(event ? event.target.dataset.nav : 'Home');
 	};
   return (
     <div className="App">
 		<Header/>
 		<div className="Wrapper">
-            <Navigation selectNav={selectNav} navItems={navItems} navId="TopNav" default={selectedComponent}/>
+            <Navigation 
+				selectNav={selectNav}
+				navItems={navItems}
+				navId="TopNav"
+				default={selectedComponent}
+			/>
         </div>
-		<Main hidden={selectedComponent !== 'home'}/>
-		<Matches hidden={selectedComponent !== 'matches'}/>
-		<Contact hidden={selectedComponent !== 'contact'}/>
+		<Main hidden={selectedComponent !== 'Home'}/>
+		<Matches hidden={selectedComponent !== 'Matches'}/>
+		<Contact hidden={selectedComponent !== 'Contact'}/>
 		<Footer />
     </div>
   );

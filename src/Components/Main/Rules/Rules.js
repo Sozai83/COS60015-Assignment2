@@ -5,10 +5,9 @@ import '../../../CSS/layout/learn-rugby.scss'
 
 const Main = () => {
     const ruleNavItems =  ["Beginner Rules", "Advance Rules", "Recent Changes"];
-    const [selectedComponent, setSelectedComponent] = useState('beginner-rules');
+    const [selectedComponent, setSelectedComponent] = useState('BeginnerRules');
     const selectNav = (event) => {
-      setSelectedComponent(event ? event.target.dataset.nav : 'beginner-rules');
-      console.log(selectedComponent);
+      setSelectedComponent(event ? event.target.dataset.nav : 'BeginnerRules');
     };
     return (
 		<section id="LearnRugby">

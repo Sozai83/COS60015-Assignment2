@@ -3,9 +3,9 @@ import React from "react";
 const RulesInfo = (props) => {
     const ruleCardClass = "RuleCard "
     const selected = props.selected;
-    const beginnerClass = ruleCardClass + (selected !== 'beginner-rules' ? 'Hidden' : '');
-    const advanceClass = ruleCardClass + (selected !== 'advance-rules' ? 'Hidden' : '');
-    const recentClass = ruleCardClass + (selected !== 'recent-changes' ? 'Hidden' : '');
+    const beginnerClass = ruleCardClass + (selected !== 'BeginnerRules' ? 'Hidden' : '');
+    const advanceClass = ruleCardClass + (selected !== 'AdvanceRules' ? 'Hidden' : '');
+    const recentClass = ruleCardClass + (selected !== 'RecentChanges' ? 'Hidden' : '');
 
   return (
     <div className="Wrapper">

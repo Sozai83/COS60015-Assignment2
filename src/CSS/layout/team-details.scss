@@ -1,6 +1,6 @@
 @import '../base/default.scss';
 
-section#team-details{
+section#TeamDetails{
     padding: 20px;
     background: $mild-white;
     border: 1px $mild-black solid;
@@ -24,23 +24,22 @@ section#team-details{
             padding-right: 20px;
             text-align: center;
         }
+    }
 
-        #News {
-            figure{
-                width: 30%;
-            }
+    #News {
+        figure{
+            width: 25%;
+        }
 
-            img{
-                height: 200px;
-                width: calc(100% - 40px);
-            }
+        img{
+            height: 160px;
+            width: calc(100% - 40px);
         }
     }
 
-    .bio{
+    .Bio{
         min-width: 500px;
         width: 40%;
-        border: $mild-black 1px solid;
         border-collapse: collapse;
         padding: 10px;
         text-align: center;
@@ -48,14 +47,19 @@ section#team-details{
         table{
             margin: 10px auto;
             width: 400px;
+            border: 1px $mild-black solid;
+            th,td{
+                padding: 10px;
+                border: 1px $mild-black solid;
+            }
         }
     }
 
     article{
         align-self: center;
 
-        .SNS{
-            margin: 20px auto;
+        .SMS{
+            margin: 0 auto;
 
             i:hover{
                 cursor: pointer;
@@ -82,6 +86,8 @@ section#team-details{
         font-weight: bold;
         text-decoration: none;
         color: $mild-black;
+        border: none;
+        background-color: transparent;
 
         &:hover {
             color: $brave-pink;
