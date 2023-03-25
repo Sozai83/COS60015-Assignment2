@@ -1,6 +1,15 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 const ContactForm = () => {
+  const [submit, setSubmit] = useState(true);
+  useEffect(()=>{
+    setSubmit((prev)=> prev ? false : true);
+  },[])
+  if(submit === true){
+    return(
+      <p>Thank you for submitting the form! We will be in touch soon :)</p>
+    )
+  }
   return (
     <form action="" method="post" id="ContactForm">
       <div id="Alert" className="Alert Hidden">

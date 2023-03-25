@@ -1,11 +1,10 @@
 import React from "react";
 import memberData from "./TeamsData";
 
-const TeamMemberCards = ({ids,openMemberDetails, ...props}) => {
+const TeamMemberCards = ({ids,openMemberDetails}) => {
     const grabMemberDetails = (event)=>{
         event.preventDefault();
         openMemberDetails(event.target.closest('figure').dataset.member);
-        console.log(event.target.dataset.member);
     }
     const members = ids.map( id =>  {
         const member = memberData[id];
@@ -19,7 +18,6 @@ const TeamMemberCards = ({ids,openMemberDetails, ...props}) => {
         </figure>)
         })
 
-    console.log(members);
     return (
         <div id="TeamMembers">
             {members}

@@ -8,7 +8,6 @@ const AsideMatches = (props) => {
 	const [selectedComponent, setSelectedComponent] = useState('2023');
 	const selectNav = (event) => {
 		setSelectedComponent(event ? event.target.dataset.nav : '2023');
-		console.log(selectedComponent);
 	};
     return (
 		<aside id="Matches" className={props.hidden && 'Hidden'}>

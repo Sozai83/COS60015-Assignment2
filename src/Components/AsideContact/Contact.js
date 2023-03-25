@@ -14,7 +14,7 @@ const Contact = (props) => {
                         <h3>Please use the form below to contact us!</h3>
                         <h4>We would love to hear from you :)</h4>
                         <address><b>Address: </b>xxx xxxx xxxxx Tokyo, Japan</address>
-                        <email><b>Email: </b><a href="mailto:fake.email@braveblossom.com">fake.email@braveblossom.com</a></email>
+                        <email><b>Email: </b><a href="mailto:fake.email@braveblossom.com">fake.email@braveblossom.com</a></email><br/>
                         <b>Phone: </b><a href="tel:123-456-789" class="phone">123-456-789</a>
                     </div>
                     <div className="ContactPoint"></div>
