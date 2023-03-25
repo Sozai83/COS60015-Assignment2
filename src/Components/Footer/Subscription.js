@@ -1,12 +1,12 @@
 import React from "react";
 import '../../CSS/layout/forms.scss'
 
-const Subscription = () => {
+const Subscription = ({onSubmit}) => {
     return (
 		<div class="Wrapper">
                 <section id="Subscription">
                     <h2>Subscribe to news letters</h2>
-                    <form action="" method="post" id="SubscribeForm">
+                    <form id="SubscribeForm"  onSubmit={onSubmit}>
                         <div id ="AlertSub" className="Alert Hidden">
                             <ul id="AlertListSub">
                                 {/* <li>Please fill Email address</li>

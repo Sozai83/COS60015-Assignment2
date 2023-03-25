@@ -1,17 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
-const ContactForm = () => {
-  const [submit, setSubmit] = useState(true);
-  useEffect(()=>{
-    setSubmit((prev)=> prev ? false : true);
-  },[])
-  if(submit === true){
-    return(
-      <p>Thank you for submitting the form! We will be in touch soon :)</p>
-    )
-  }
+const ContactForm = (props) => {
   return (
-    <form action="" method="post" id="ContactForm">
+    <form id="ContactForm" onSubmit={props.handler}>
       <div id="Alert" className="Alert Hidden">
         <ul id="AlertList">
           {/* <li>Please fill First Name, Last Name, Email address, category, Description</li>

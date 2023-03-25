@@ -87,6 +87,18 @@ section#Subscription{
     #alert-sub{
         color: $red;
     }
+
+    button{
+        padding: 10px;
+        margin: 10px 0;
+        background-color: $brave-pink-transparent;
+        border: 1px $brave-pink solid;
+        border-radius: 5px;
+        &:hover{
+            cursor: pointer;
+            background-color: $brave-pink;
+        }
+    }
 }
   
 
