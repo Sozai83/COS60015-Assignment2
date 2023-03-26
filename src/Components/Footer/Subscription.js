@@ -1,22 +1,61 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import '../../CSS/layout/forms.scss'
 
 const Subscription = ({onSubmit}) => {
+    const [email, setEmail] = useState('');
+    const [emailValidation, setEmailValidation] = useState(true);
+  
+    useEffect(()=>{
+      const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if(email.length > 0){
+        setEmailValidation(regexEmail.test(email));
+      }else{
+        setEmailValidation(true);
+      }
+    }, [email, emailValidation]);
+
+    const [area, setArea] = useState('any');
+
+    const submitHandler = (event)=>{
+        event.preventDefault();
+        if(emailValidation && email.length > 0 && area.length > 0){
+            onSubmit();
+        }
+    }
+
     return (
 		<div class="Wrapper">
                 <section id="Subscription">
                     <h2>Subscribe to news letters</h2>
-                    <form id="SubscribeForm"  onSubmit={onSubmit}>
-                        <div id ="AlertSub" className="Alert Hidden">
+                    <form id="SubscribeForm"  onSubmit={submitHandler}>
+                        { (!emailValidation || email.length <= 0 || area.length <= 0) && (
+                            <div id ="AlertSub" className="Alert">
                             <ul id="AlertListSub">
-                                {/* <li>Please fill Email address</li>
-                                <li>Please enter valid email adress.</li> */}
+                                {!emailValidation && (
+                                    <li>Please enter valid email adress.</li>
+                                )}
+                                {email.length <= 0 && (
+                                    <li>Email adress is required.</li>
+                                )}
+                                {area.length <= 0 && (
+                                    <li>Please select area.</li>
+                                )}
                             </ul>
                         </div>
+                        )}
+                        
                         <label for="subemail">Email (mandatory): </label>
-                        <input type="email" id="submail" name="subemail" aria-label="submail" placeholder="abc@braveblossoms.com.au" required/>
+                        <input type="email"
+                            id="submail"
+                            name="subemail"
+                            aria-label="submail"
+                            placeholder="abc@braveblossoms.com.au"
+                            onChange={(event)=>setEmail(event.target.value)}
+                            required/>
                         <label for="area" className="Dropdown">Areas: </label>
-                        <select name="area">
+                        <select
+                            name="area"
+                            onChange={(event)=>setArea(event.target.value)}>
                             <option type="checkbox" value="any" aria-label="any" selected>Any</option>
                             <option type="checkbox" value="hokkaido" aria-label="hokkaido">Hokkaido</option>
                             <option type="checkbox" value="tohoku" aria-label="tohoku">Tohoku</option>
