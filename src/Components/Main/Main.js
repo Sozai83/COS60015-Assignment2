@@ -4,8 +4,17 @@ import Welcome from "./Welcome/Welcome";
 import Teams from "./Teams/Teams";
 import Rules from "./Rules/Rules";
 import {scrollToEl, changeActive} from '../../utils'
+import {ErrorBoundary} from 'react-error-boundary'
 
-
+function MainErrorFallbackComponent({error, resetErrorBoundary}) {
+	return (
+	  <div role="alert">
+		<p>Something went wrong with the Main page:</p>
+		<pre>{error.message}</pre><br/>
+		<p>Please try reloading this page. If the issue persists, please contact <a href="mailto: support@bravebrossom.test.com">Brave Brossom Support Team</a>.</p>
+	  </div>
+	)
+  }
 
 const Main = (props) => {
 	const mainNav = ['Welcome', 'Teams', 'Learn Rugby'];
@@ -24,15 +33,19 @@ const Main = (props) => {
     return (
 		<main id="Home" className={props.hidden && 'Hidden'}>
 			<div className="Wrapper">
-				<Navigation 
-					navItems={mainNav}
-					navId= {navId}
-					selectNav={selectnav}
-					default={selectedComponent} 
-				/>
-				<Welcome />
-				<Teams />
-				<Rules />
+				<ErrorBoundary 
+					FallbackComponent={MainErrorFallbackComponent}
+					onError={(error, errorInfo) => console.error({ error, errorInfo })}>
+					<Navigation 
+						navItems={mainNav}
+						navId= {navId}
+						selectNav={selectnav}
+						default={selectedComponent} 
+					/>
+					<Welcome />
+					<Teams />
+					<Rules />
+				</ErrorBoundary>
 			</div>
 		</main>
     );

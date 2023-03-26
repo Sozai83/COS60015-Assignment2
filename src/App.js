@@ -35,30 +35,26 @@ function App() {
 	},[selectedComponent]);
 
   return (
-	<ErrorBoundary 
-	FallbackComponent={GeneralErrorFallbackComponent}
-	onError={(error, errorInfo) => console.error({ error, errorInfo })}
-	onReset={() => {
-	// reset the state of your app
-	}}
-	>
 		<div className="App">
-			<Header/>
-			<div className="Wrapper">
-				<Navigation 
-					selectNav={selectNav}
-					navItems={navItems}
-					navId={navId}
-					default={selectedComponent}
-					id = {true}
-				/>
-			</div>
-			<Main hidden={selectedComponent !== 'Home'}/>
-			<Matches hidden={selectedComponent !== 'Matches'}/>
-			<Contact hidden={selectedComponent !== 'Contact'}/>
-			<Footer selectMainComponent={setSelectedComponent} />
+			<ErrorBoundary 
+				FallbackComponent={GeneralErrorFallbackComponent}
+				onError={(error, errorInfo) => console.error({ error, errorInfo })}>
+				<Header/>
+				<div className="Wrapper">
+					<Navigation 
+						selectNav={selectNav}
+						navItems={navItems}
+						navId={navId}
+						default={selectedComponent}
+						id = {true}
+					/>
+				</div>
+				<Main hidden={selectedComponent !== 'Home'}/>
+				<Matches hidden={selectedComponent !== 'Matches'}/>
+				<Contact hidden={selectedComponent !== 'Contact'}/>
+				<Footer selectMainComponent={setSelectedComponent} />
+			</ErrorBoundary>
 		</div>
-	</ErrorBoundary>
   );
 }
 

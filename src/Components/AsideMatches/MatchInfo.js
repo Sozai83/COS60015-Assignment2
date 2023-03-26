@@ -3,8 +3,9 @@ import React from 'react'
 const GameInfo = (props) => {
     const selected = props.selected;
   return (
-	  <div>
-	  	<section id="Matches2023" className={selected !== '2023' && 'Hidden'}>
+    <React.Fragment>
+	  	{selected === "2023" && 
+            (<section id="Matches2023">
                     <section className="MatchCard">
                         <table>
                             <tr className="MatchTitle">
@@ -142,6 +143,8 @@ const GameInfo = (props) => {
                         </div>
                     </section>
                 </section>
+            )}
+            {selected === '2022' && (
                 <section id="matches_2022" className={selected !== '2022' && 'Hidden'}>
                     <section className="MatchCard">
                         <table>
@@ -276,6 +279,8 @@ const GameInfo = (props) => {
                         </div>
                     </section>
                 </section>
+            )}
+            {selected === '2021' && (
                 <section id="matches_2021" className={selected !== '2021' && 'Hidden'}>
                     <section className="MatchCard">
                         <table>
@@ -407,7 +412,8 @@ const GameInfo = (props) => {
                         </div>
                     </section>
                 </section>
-	  </div>
+            )}
+    </React.Fragment>
   );
 };
 
