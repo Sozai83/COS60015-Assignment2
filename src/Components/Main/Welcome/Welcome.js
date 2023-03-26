@@ -5,7 +5,7 @@ import '../../../CSS/layout/welcome.scss'
 const Welcome = () => {
  
   return (
-    <div>
+    <React.Fragment>
       <section id="Welcome">
         <h1>Welcome to the Brave Blossoms Portal!</h1>
         <article>
@@ -18,7 +18,7 @@ const Welcome = () => {
         </article>
       </section>
       <WelcomePhotoCredential />
-    </div>
+    </React.Fragment>
   );
 };
 

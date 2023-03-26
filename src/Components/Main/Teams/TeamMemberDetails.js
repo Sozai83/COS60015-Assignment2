@@ -5,16 +5,14 @@ import '../../../CSS/layout/team-details.scss'
 const TeamMemberDetails = ({toggleDetailStatus, ...props}) => {
     const member = memberData[props.member];
     const memberBio = member.bio.split('<br>').map(sentence => <p>{sentence}</p>);
-    const className = `Overlay ${props.className}`;
     const hideDetails = (event)=>{
-        console.log(event.target.className);
-        if(event.target.className === 'Overlay ' || event.target.className === 'Close'){
+        if(event.target.className === 'Overlay' || event.target.className === 'Close'){
             event.preventDefault();
             toggleDetailStatus();
         }       
     }
   return (
-    <div className={className} onClick={hideDetails}>
+    <div className='Overlay' onClick={hideDetails}>
       <section id="TeamDetails">
         <section className="Details">
           <button className="Close">

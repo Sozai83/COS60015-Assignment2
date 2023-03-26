@@ -19,7 +19,7 @@ class TeamMember {
     }
 }
 
-const fw1 = new TeamMember("fw1", "Keita Inagaki", "Forward", 
+const fw1 = new TeamMember("fW24", "Keita Inagaki", "Forward", 
 `Inagaki made his debut for the Brave Blossoms in 2014 and has since become a key member of the team, known for his powerful scrummaging and ball-carrying ability.<br>
 He was a key player for Japan during the 2019 Rugby World Cup, starting in all of the team's matches, including their historic victory over Scotland in the group stage.<br>
 In addition to his international success, Inagaki has been a standout player in the Top League, where he has won multiple championships with the Panasonic Wild Knights. He was also named the Top League's Best Prop in 2018 and 2019.

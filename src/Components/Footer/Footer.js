@@ -3,11 +3,10 @@ import Subscription from "./Subscription"
 import FooterBody from "./FooterBody/FooterBody"
 import '../../CSS/layout/footer.scss'
 
-const Footer = () => {
+const Footer = ({selectMainComponent}) => {
 	const [subscriptionFormStatus, setSubscriptionFormStatus] = useState(false);
 	const onSubmit = () => setSubscriptionFormStatus(true);
 	const reappearingFrom = ()=> setSubscriptionFormStatus(false);
-
     return (
 		<footer>
 			{subscriptionFormStatus === false && <Subscription onSubmit={onSubmit}/>}
@@ -19,7 +18,7 @@ const Footer = () => {
 					</section>
 				</div>
 			)}
-			<FooterBody />
+			<FooterBody selectMainComponent={selectMainComponent}/>
 		</footer>
     );
 };

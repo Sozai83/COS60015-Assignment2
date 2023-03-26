@@ -8,7 +8,7 @@ const ContactFormContainer = () => {
     }, 5000);
   };
   const [submitStatus, setSubmitStatus] = useState(false);
-  const formSubmit = ()=>setSubmitStatus(true);
+  const formSubmit = () => setSubmitStatus(true);
   useEffect(() => {
     if (submitStatus) {
         sendToHomepage(); // call your sendToHomepage function

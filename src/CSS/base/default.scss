@@ -104,3 +104,16 @@ iframe{
   border: none;
   margin: 0;
 }
+
+button.AlertReset{
+  padding: 10px;
+  border: 1px $brave-pink solid;
+  border-radius: 5px;
+  background-color: $brave-pink-transparent;
+  margin: 10px 0;
+  
+  &:hover{
+    cursor: pointer;
+    background-color: $brave-pink;
+  }
+}

@@ -4,7 +4,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TeamMemberCards from "./TeamMemberCard";
 import Slider from "react-slick";
+import {ErrorBoundary} from 'react-error-boundary'
 
+function TeamMemberCardFallbackComponent({error, resetErrorBoundary}) {
+  return (
+    <div role="alert">
+      <p>Something went wrong when retrieving team member's cards:</p>
+      <pre>{error.message}</pre><br/>
+      <p>Please try reloading this page. If the issue persists, please contact <a href="mailto: support@bravebrossom.test.com">Brave Brossom Support Team</a>.</p>
+    </div>
+  )
+}
 
 const TeamMembers = ({openMemberDetails, ...props}) => {
     const settings = {
@@ -15,6 +25,13 @@ const TeamMembers = ({openMemberDetails, ...props}) => {
         slidesToScroll: 1
       };
   return (
+    <ErrorBoundary 
+        FallbackComponent={TeamMemberCardFallbackComponent}
+        onError={(error, errorInfo) => console.error({ error, errorInfo })}
+        onReset={() => {
+        // reset the state of your app
+        }}
+    >
     <div>
         <h3>Team Members</h3>
         <div id="TeamMembersWrapper">
@@ -46,7 +63,8 @@ const TeamMembers = ({openMemberDetails, ...props}) => {
                 </Slider>
             <i className="Credit">Photos from <a href="http://en.rugby-japan.jp/japan/">Japan rugby</a></i>
         </div>
-    </div>    
+    </div>
+    </ErrorBoundary>
     );
 };
 
