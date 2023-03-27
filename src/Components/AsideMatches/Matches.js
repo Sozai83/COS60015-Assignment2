@@ -33,7 +33,7 @@ const AsideMatches = (props) => {
 	
     return (
 		<aside id="Matches" className={props.hidden && 'Hidden'}>
-            <div class="Wrapper">
+            <div className="Wrapper">
 				<ErrorBoundary 
 					FallbackComponent={MatchesErrorFallbackComponent}
 					onError={(error, errorInfo) => console.error({ error, errorInfo })}>
