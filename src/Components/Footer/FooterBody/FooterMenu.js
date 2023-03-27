@@ -1,11 +1,8 @@
-import React from "react";
-import {scrollToEl} from '../../../utils'
-
+import React, {useState} from "react";
 
 const Footer = ({selectMainComponent}) => {
   const body = document.querySelector("body");
     const moveTo = (event)=>{
-      
       if (event.target.tagName === "LI"){
         let selected = event.target.dataset.nav.split('-');
         let topNav = selected[0];
@@ -14,7 +11,15 @@ const Footer = ({selectMainComponent}) => {
         if(position === 'Top'){
             body.scrollIntoView();       
         }else{
-          scrollToEl(position, null, true);
+          try{
+            const selectedEl = document.getElementById(position);
+            selectedEl.scrollIntoView();
+          }catch{
+            setTimeout(()=>{
+              const selectedEl2 = document.getElementById(position);
+              selectedEl2.scrollIntoView();
+            },1000)
+          }
         }
       }
     }
