@@ -157,7 +157,7 @@ const GameInfo = (props) => {
                 </section>
             )}
             {selected === '2022' && (
-                <section id="matches_2022" className={selected !== '2022' && 'Hidden'}>
+                <section id="matches_2022">
                     <section className="MatchCard">
                         <table>
                             <tbody>
@@ -200,7 +200,7 @@ const GameInfo = (props) => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/mAaJeXlOq-A" title="YouTube video player" frameborder="0" allowFullScreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/mAaJeXlOq-A" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/@lloydsportschannel3683" target="blank"> Lloyd Sports Channel </a></i></figcaption>
                         </div>
@@ -247,7 +247,7 @@ const GameInfo = (props) => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/nn38b5raeXQ" title="YouTube video player" frameborder="0" allowFullScreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/nn38b5raeXQ" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/@AutumnNationsSeries" target="blank">Autumn Nations Series</a></i></figcaption>
                         </div>
@@ -305,7 +305,7 @@ const GameInfo = (props) => {
                 </section>
             )}
             {selected === '2021' && (
-                <section id="matches_2021" className={selected !== '2021' && 'Hidden'}>
+                <section id="matches_2021">
                     <section className="MatchCard">
                         <table>
                             <tbody>
@@ -348,7 +348,7 @@ const GameInfo = (props) => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/g-poWjFCXiU" title="YouTube video player" frameborder="0" allowFullScreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/g-poWjFCXiU" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/@rugbyworldcupjp" target="blank">ワールドラグビー 日本チャンネル</a></i></figcaption>
                         </div>
@@ -395,7 +395,7 @@ const GameInfo = (props) => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/D_EdDO3ltto" title="YouTube video player" frameborder="0" allowFullScreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/D_EdDO3ltto" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/channel/UCBFtpGAWdU0s-kEkykmjQeg" target="blank">Rugby Z Highlights</a></i></figcaption>
                         </div>
@@ -442,7 +442,7 @@ const GameInfo = (props) => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/id7Pbet5HEI" title="YouTube video player" frameborder="0" allowFullScreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/id7Pbet5HEI" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/channel/UCsMWJnL1aY0g_FBijoRe77g" target="blank"> Rugby.com.au</a></i></figcaption>
                         </div>
