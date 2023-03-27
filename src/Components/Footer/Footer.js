@@ -11,7 +11,7 @@ const Footer = ({selectMainComponent}) => {
 		<footer>
 			{subscriptionFormStatus === false && <Subscription onSubmit={onSubmit}/>}
 			{subscriptionFormStatus && (
-				<div class="Wrapper">
+				<div className="Wrapper">
 					<section id="Subscription">
 						<p>Thank you for subscribing Brave Blossoms!<br/>
 						<button onClick={reappearingFrom}>Subscribe more</button></p>

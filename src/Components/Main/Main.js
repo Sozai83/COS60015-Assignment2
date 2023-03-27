@@ -31,7 +31,7 @@ const Main = (props) => {
 		prevStatus.current = selectedComponent;
 	},[selectedComponent]);
     return (
-		<main id="Home" className={props.hidden && 'Hidden'}>
+		<main id="Home">
 			<div className="Wrapper">
 				<ErrorBoundary 
 					FallbackComponent={MainErrorFallbackComponent}

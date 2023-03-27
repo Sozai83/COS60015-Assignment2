@@ -23,8 +23,8 @@ const RulesInfo = (props) => {
                                 </p>
                             </div>
                             <figure>
-                                <iframe width="500" height="315" src="https://www.youtube.com/embed/-LjUeplfN6Q" title="YouTube video player" allowfullscreen></iframe>
-                                <i className="Credit">Video made by <a href="https://www.youtube.com/@rugbykishiboy7930" target="_blank">Rugby Kishiboy</a></i>
+                                <iframe width="500" height="315" src="https://www.youtube.com/embed/-LjUeplfN6Q" title="YouTube video player" allowFullScreen></iframe>
+                                <i className="Credit">Video made by <a href="https://www.youtube.com/@rugbykishiboy7930" target="blank">Rugby Kishiboy</a></i>
                             </figure>
                         </article>
                         <article>
@@ -40,8 +40,8 @@ const RulesInfo = (props) => {
                                 <p> There are various penalties in rugby, such as offsides, high tackles, or playing the ball on the ground. Penalties can result in a free kick, a penalty kick, or a yellow or red card for the offending player.</p>
                             </div>
                             <figure>
-                                <iframe width="500" height="315" src="https://www.youtube.com/embed/Vn5fwhxhj4s" title="YouTube video player" allowfullscreen></iframe>
-                                <i className="Credit">Video made by <a href="https://www.youtube.com/@SapporoPRD" target="_blank">SapporoPRD</a></i>
+                                <iframe width="500" height="315" src="https://www.youtube.com/embed/Vn5fwhxhj4s" title="YouTube video player" allowFullScreen></iframe>
+                                <i className="Credit">Video made by <a href="https://www.youtube.com/@SapporoPRD" target="blank">SapporoPRD</a></i>
                             </figure>
                         </article>
                     </section>
@@ -63,8 +63,8 @@ const RulesInfo = (props) => {
                                 <p>If a player knocks the ball forward with their hands, it is considered a knock on and play stops. The opposing team is awarded a scrum.</p>                                     
                             </div>
                             <figure>
-                                <iframe width="500" height="315" src="https://www.youtube.com/embed/39qZqnlqJ34" title="YouTube video player" allowfullscreen></iframe>
-                                <i className="Credit">Video made by <a href="https://www.youtube.com/@jrfuofficial" target="_blank">JAPAN RUGBY TV</a></i>
+                                <iframe width="500" height="315" src="https://www.youtube.com/embed/39qZqnlqJ34" title="YouTube video player" allowFullScreen></iframe>
+                                <i className="Credit">Video made by <a href="https://www.youtube.com/@jrfuofficial" target="blank">JAPAN RUGBY TV</a></i>
                             </figure>
                         </article>
                     </section>
@@ -84,8 +84,8 @@ const RulesInfo = (props) => {
                                 <p>The kick-off rules have been changed to make them more exciting and encourage attacking play. Kick-offs are now allowed to be taken from anywhere along the 22-meter line, rather than just from the center of the pitch.</p>
                             </div>
                             <figure>
-                                <iframe width="500" height="315" src="https://www.youtube.com/embed/ZXxuoXu7qTw" title="YouTube video player" allowfullscreen></iframe>
-                                <i className="Credit">Video made by <a href="https://www.youtube.com/@taizochannel6718" target="_blank">ラグビープロレフリー/Taizo Channel</a></i>
+                                <iframe width="500" height="315" src="https://www.youtube.com/embed/ZXxuoXu7qTw" title="YouTube video player" allowFullScreen></iframe>
+                                <i className="Credit">Video made by <a href="https://www.youtube.com/@taizochannel6718" target="blank">ラグビープロレフリー/Taizo Channel</a></i>
                             </figure>
                         </article>
                     </section>

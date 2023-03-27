@@ -24,7 +24,7 @@ const Subscription = ({onSubmit}) => {
     }
 
     return (
-		<div class="Wrapper">
+		<div className="Wrapper">
                 <section id="Subscription">
                     <h2>Subscribe to news letters</h2>
                     <form id="SubscribeForm"  onSubmit={submitHandler}>
@@ -32,19 +32,19 @@ const Subscription = ({onSubmit}) => {
                             <div id ="AlertSub" className="Alert">
                             <ul id="AlertListSub">
                                 {!emailValidation && (
-                                    <li>Please enter valid email adress.</li>
+                                    <li key="subEmail">Please enter valid email adress.</li>
                                 )}
                                 {email.length <= 0 && (
-                                    <li>Email adress is required.</li>
+                                    <li key="subMandatory">Email adress is required.</li>
                                 )}
                                 {area.length <= 0 && (
-                                    <li>Please select area.</li>
+                                    <li key="subArea">Please select area.</li>
                                 )}
                             </ul>
                         </div>
                         )}
                         
-                        <label for="subemail">Email (mandatory): </label>
+                        <label htmlFor="subemail">Email (mandatory): </label>
                         <input type="email"
                             id="submail"
                             name="subemail"
@@ -52,11 +52,12 @@ const Subscription = ({onSubmit}) => {
                             placeholder="abc@braveblossoms.com.au"
                             onChange={(event)=>setEmail(event.target.value)}
                             required/>
-                        <label for="area" className="Dropdown">Areas: </label>
+                        <label htmlFor="area" className="Dropdown">Areas: </label>
                         <select
                             name="area"
+                            defaultValue="any"
                             onChange={(event)=>setArea(event.target.value)}>
-                            <option type="checkbox" value="any" aria-label="any" selected>Any</option>
+                            <option type="checkbox" value="any" aria-label="any">Any</option>
                             <option type="checkbox" value="hokkaido" aria-label="hokkaido">Hokkaido</option>
                             <option type="checkbox" value="tohoku" aria-label="tohoku">Tohoku</option>
                             <option type="checkbox" value="tohoku" aria-label="kanto">Kanto</option>

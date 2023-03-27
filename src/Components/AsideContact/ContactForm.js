@@ -51,7 +51,7 @@ const ContactForm = (props) => {
     setmissingMandatory(()=>tempMissingMandatory);
   }
 
-  const setSubmitStatus = (event) => {
+  const submitHandler = (event) => {
     event.preventDefault();
     if(emailValidation && phoneValidation && missingMandatory <= 0){
       props.handler();
@@ -59,33 +59,33 @@ const ContactForm = (props) => {
   }
 
   return (
-    <form id="ContactForm" onSubmit={setSubmitStatus}>
+    <form id="ContactForm" onSubmit={submitHandler}>
       { (!emailValidation || !phoneValidation || missingMandatory.length > 0) && (
       <div id="Alert" className="Alert">
         <ul id="AlertList">
           {!emailValidation && (
-            <li>Please enter valid email adress.</li>
+            <li key="email">Please enter valid email adress.</li>
           )}
           {!phoneValidation && (
-            <li>Please enter valid phone number.</li>
+            <li key="phone">Please enter valid phone number.</li>
           )}
           {missingMandatory.length > 0 && (
-            <li>Please fill {missingMandatory}</li>
+            <li  key="mandatory">Please fill {missingMandatory}</li>
           )}
         </ul>
       </div>
       )}
       <p>Field with * is mandatory.</p>
-      <label for="fname">First Name*: </label>
+      <label htmlFor="fname">First Name*: </label>
       <input
         id="fname"
         name="fname"
         aria-label="fname"
         type="text"
         placeholder="First name"
-        onChange={ (event)=>setFname(event.target.value)}
+        onChange={(event)=>setFname(event.target.value)}
       />
-      <label for="lname">Last Name*: </label>
+      <label htmlFor="lname">Last Name*: </label>
       <input
         id="lname"
         name="lname"
@@ -94,7 +94,7 @@ const ContactForm = (props) => {
         placeholder="Last name"
         onChange={ (event)=>setLname(event.target.value)}
       />
-      <label for="email">Email*: </label>
+      <label htmlFor="email">Email*: </label>
       <input
         id="email"
         name="email"
@@ -103,7 +103,7 @@ const ContactForm = (props) => {
         placeholder="abc@braveblossom.com"
         onChange={ (event)=> setEmail(event.target.value)}
       />
-      <label for="phone">Phone: </label>
+      <label htmlFor="phone">Phone: </label>
       <input id="phone"
       name="phone"
       aria-label="phone"
@@ -111,11 +111,12 @@ const ContactForm = (props) => {
       placeholder="0123456789"
       onChange={ (event)=> setPhone(event.target.value)}
       />
-      <label for="category" class="left">
+      <label htmlFor="category" className="left">
         Category*:
       </label>
       <select
         name="category"
+        defaultValue="otherGeneralQueries"
         onChange={(event)=> setCategory(event.target.value)}
       >
         <option
@@ -140,12 +141,11 @@ const ContactForm = (props) => {
           type="checkbox"
           value="otherGeneralQueries"
           aria-label="checkbox_team"
-          selected
         >
           Other General Queries
         </option>
       </select>
-      <label for="query" class="left">
+      <label htmlFor="query" className="left">
         Description*:
       </label>
       <textarea
@@ -155,7 +155,7 @@ const ContactForm = (props) => {
         type="text"
         onChange={ (event)=> setMessage(event.target.value)}
       ></textarea>
-      <label for="file" class="left">
+      <label htmlFor="file" className="left">
         Select a file:
       </label>
       <input type="file" id="file" name="file" />

@@ -5,7 +5,7 @@ import FooterContact from "./FooterContact";
 const Footer = ({selectMainComponent}) => {
     return (
 		<section id="Footer">
-      <div class="Wrapper">
+      <div className="Wrapper">
         <FooterMenu selectMainComponent={selectMainComponent}/>
         <FooterContact />
       </div>

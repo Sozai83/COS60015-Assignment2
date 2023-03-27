@@ -14,7 +14,7 @@ const withNavList = Component => {
                 <li key={index} 
                     data-nav={nav.replace(" ", "")}
                     id={`Nav${nav.replace(" ", "")}`}
-                    className={props.default === nav.replace(" ", "") && 'Active'}
+                    className={props.default === nav.replace(" ", "") ? 'Active' : ''}
                     onClick={selectEl}
                     >
                         {nav.toUpperCase()}

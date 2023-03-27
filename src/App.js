@@ -49,9 +49,9 @@ function App() {
 						id = {true}
 					/>
 				</div>
-				<Main hidden={selectedComponent !== 'Home'}/>
-				<Matches hidden={selectedComponent !== 'Matches'}/>
-				<Contact hidden={selectedComponent !== 'Contact'}/>
+				{selectedComponent === 'Home' && <Main/>}
+				{selectedComponent === 'Matches' && <Matches/>}
+				{selectedComponent === 'Contact' && <Contact/>}
 				<Footer selectMainComponent={setSelectedComponent} />
 			</ErrorBoundary>
 		</div>
