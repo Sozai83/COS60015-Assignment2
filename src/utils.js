@@ -11,7 +11,6 @@ const scrollToEl = (el, setStatus, footer) =>{
     const selected = footer ? el : el.target.dataset.nav;
     setStatus && setStatus(selected);
     const elementPosition = document.getElementById(selected).getBoundingClientRect().top;
-    console.log(elementPosition);
     window.scrollTo({
         top: elementPosition,
         behavior: 'auto',
