@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/sozai83.github.io/COS60015-Assignment2/static/css/main.401bc574.css",
+    "main.js": "/sozai83.github.io/COS60015-Assignment2/static/js/main.10324d64.js",
+    "static/media/contact.jpg": "/sozai83.github.io/COS60015-Assignment2/static/media/contact.73d4c9af8aac210d002b.jpg",
+    "static/media/rugby_cover.jpg": "/sozai83.github.io/COS60015-Assignment2/static/media/rugby_cover.e22323a0d2ae33d24691.jpg",
+    "static/media/slick.svg": "/sozai83.github.io/COS60015-Assignment2/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/sozai83.github.io/COS60015-Assignment2/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/sozai83.github.io/COS60015-Assignment2/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/sozai83.github.io/COS60015-Assignment2/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/sozai83.github.io/COS60015-Assignment2/index.html",
+    "main.401bc574.css.map": "/sozai83.github.io/COS60015-Assignment2/static/css/main.401bc574.css.map",
+    "main.10324d64.js.map": "/sozai83.github.io/COS60015-Assignment2/static/js/main.10324d64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.401bc574.css",
+    "static/js/main.10324d64.js"
+  ]
+}
