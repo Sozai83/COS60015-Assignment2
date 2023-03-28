@@ -64,7 +64,7 @@ const GameInfo = (props) => {
                                 <tr className="MatchTeams">
                                     <th>Game: </th>
                                     <td>
-                                        <img src="./img/teams/samoa.gif" alt="Samoa" className="Team"/>
+                                        <img src="./img/teams/samoa.jpg" alt="Samoa" className="Team"/>
                                         <div className="Teams">Samoa vs Japan</div>
                                         <img src="./img/teams/jpn.png" alt="Japan" className="Team"/>
                                     </td>
@@ -200,7 +200,7 @@ const GameInfo = (props) => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/mAaJeXlOq-A" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/mAaJeXlOq-A" title="YouTube video player" frameBorder="0" loading="lazy" allowFullScreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/@lloydsportschannel3683" target="blank"> Lloyd Sports Channel </a></i></figcaption>
                         </div>
@@ -247,7 +247,7 @@ const GameInfo = (props) => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/nn38b5raeXQ" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/nn38b5raeXQ" title="YouTube video player" frameBorder="0" loading="lazy" allowFullScreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/@AutumnNationsSeries" target="blank">Autumn Nations Series</a></i></figcaption>
                         </div>
@@ -348,7 +348,7 @@ const GameInfo = (props) => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/g-poWjFCXiU" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/g-poWjFCXiU" title="YouTube video player" frameBorder="0" loading="lazy" allowFullScreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/@rugbyworldcupjp" target="blank">ワールドラグビー 日本チャンネル</a></i></figcaption>
                         </div>
@@ -395,7 +395,7 @@ const GameInfo = (props) => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/D_EdDO3ltto" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/D_EdDO3ltto" title="YouTube video player" frameBorder="0" loading="lazy" allowFullScreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/channel/UCBFtpGAWdU0s-kEkykmjQeg" target="blank">Rugby Z Highlights</a></i></figcaption>
                         </div>
@@ -442,7 +442,7 @@ const GameInfo = (props) => {
                         <div className="Highlight">
                             <h3>Highlight</h3>
                             <figure>
-                                <iframe width="400" height="315" src="https://www.youtube.com/embed/id7Pbet5HEI" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
+                                <iframe width="400" height="315" src="https://www.youtube.com/embed/id7Pbet5HEI" title="YouTube video player" frameBorder="0" loading="lazy" allowFullScreen></iframe>
                             </figure>
                             <figcaption><i className="Credit">Video made by <a href="https://www.youtube.com/channel/UCsMWJnL1aY0g_FBijoRe77g" target="blank"> Rugby.com.au</a></i></figcaption>
                         </div>
